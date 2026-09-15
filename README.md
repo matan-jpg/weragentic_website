@@ -11,7 +11,7 @@ Search each file for the bracketed placeholders and replace with real content:
   - `[SHORT_TAGLINE]`, `[ONE_LINE_BUSINESS_DESCRIPTION_FOR_SEARCH_ENGINES]` — used in `<title>`/meta description
   - `[HERO_HEADLINE]`, `[HERO_SUBCOPY]`
   - `[SERVICE_1_TITLE]` / `[SERVICE_1_DESCRIPTION]` (and 2, 3) — swap the inline SVG icons too if a service doesn't fit the placeholder icon
-  - `[CONTACT_INTRO]`, `[PHONE_NUMBER]`, `[EMAIL_ADDRESS]`, `[BUSINESS_ADDRESS]`
+  - `[CONTACT_INTRO]`, `[PHONE_NUMBER]`, `[BUSINESS_ADDRESS]` (email is filled in: support@weragentic.com)
   - `[SHORT_FOOTER_TAGLINE]`
   - The contact `<form>` tag's `action="https://formspree.io/f/REPLACE_WITH_FORM_ID"` — sign up free at formspree.io (or web3forms.com), create a form, and paste in your real endpoint/ID. Without this, the form will not actually send anywhere.
 

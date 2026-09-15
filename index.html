@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[MATAN_BUSINESS_NAME] &mdash; [SHORT_TAGLINE]</title>
+<meta name="description" content="[ONE_LINE_BUSINESS_DESCRIPTION_FOR_SEARCH_ENGINES]">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="logo">[MATAN_BUSINESS_NAME]</a>
+    <nav class="nav-desktop">
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+        <circle cx="620" cy="180" r="260" fill="var(--color-primary)" opacity="0.08"/>
+        <circle cx="120" cy="620" r="200" fill="var(--color-accent)" opacity="0.10"/>
+      </svg>
+    </div>
+    <div class="container hero-inner" data-animate>
+      <h1 class="head-1">[HERO_HEADLINE &mdash; e.g. "Quality Work, Delivered Right"]</h1>
+      <p class="hero-sub">[HERO_SUBCOPY &mdash; one or two sentences describing what the business does and for whom.]</p>
+      <a href="#contact" class="btn btn-primary">Get in touch</a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="head-2 section-title" data-animate>Our Services</h2>
+      <div class="card-grid">
+
+        <div class="solution-card" data-animate>
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h3 class="head-3">[SERVICE_1_TITLE]</h3>
+          <p>[SERVICE_1_DESCRIPTION &mdash; a short sentence or two about this service.]</p>
+        </div>
+
+        <div class="solution-card" data-animate>
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          </div>
+          <h3 class="head-3">[SERVICE_2_TITLE]</h3>
+          <p>[SERVICE_2_DESCRIPTION &mdash; a short sentence or two about this service.]</p>
+        </div>
+
+        <div class="solution-card" data-animate>
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 1-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 1 5.4-5.4z"/></svg>
+          </div>
+          <h3 class="head-3">[SERVICE_3_TITLE]</h3>
+          <p>[SERVICE_3_DESCRIPTION &mdash; a short sentence or two about this service.]</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info" data-animate>
+        <h2 class="head-2">Get in Touch</h2>
+        <p>[CONTACT_INTRO &mdash; e.g. "Have a question or want a quote? Send us a message and we'll get back to you shortly."]</p>
+        <ul class="contact-details">
+          <li><strong>Phone:</strong> [PHONE_NUMBER]</li>
+          <li><strong>Email:</strong> [EMAIL_ADDRESS]</li>
+          <li><strong>Address:</strong> [BUSINESS_ADDRESS]</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" data-animate
+            action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
+            method="POST">
+        <div class="field">
+          <input type="text" id="name" name="name" placeholder=" " required>
+          <label for="name">Name</label>
+        </div>
+        <div class="field">
+          <input type="email" id="email" name="email" placeholder=" " required>
+          <label for="email">Email</label>
+        </div>
+        <div class="field">
+          <textarea id="message" name="message" placeholder=" " rows="4" required></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="form-submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="logo">[MATAN_BUSINESS_NAME]</div>
+      <p>[SHORT_FOOTER_TAGLINE]</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-contact">
+      <p>[PHONE_NUMBER]</p>
+      <p>[EMAIL_ADDRESS]</p>
+    </div>
+  </div>
+  <div class="container footer-legal">
+    &copy; <span id="year"></span> [MATAN_BUSINESS_NAME]. All rights reserved.
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
